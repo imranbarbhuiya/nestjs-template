@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"emitDeclarationOnly": false,
+		"noEmit": false,
+		"outDir": "dist"
+	},
+	"include": ["src/**/*", "process-env.d.ts"],
+	"exclude": ["node_modules", "tests", "dist", "**/*.test.ts"]
+}
