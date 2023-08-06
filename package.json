@@ -41,7 +41,7 @@
 		"zod": "^3.21.4"
 	},
 	"devDependencies": {
-		"@darraghor/eslint-plugin-nestjs-typed": "^4.0.2",
+		"@darraghor/eslint-plugin-nestjs-typed": "^4.0.3",
 		"@nestjs/cli": "^10.1.11",
 		"@nestjs/schematics": "^10.0.1",
 		"@nestjs/testing": "^10.1.3",
