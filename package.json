@@ -36,28 +36,28 @@
 		"passport": "^0.6.0",
 		"reflect-metadata": "^0.1.13",
 		"rxjs": "^7.8.1",
-		"tslib": "^2.6.1",
+		"tslib": "^2.6.2",
 		"undici": "^5.23.0",
-		"zod": "^3.21.4"
+		"zod": "^3.22.2"
 	},
 	"devDependencies": {
-		"@darraghor/eslint-plugin-nestjs-typed": "^4.0.11",
-		"@nestjs/cli": "^10.1.11",
+		"@darraghor/eslint-plugin-nestjs-typed": "^4.0.12",
+		"@nestjs/cli": "^10.1.12",
 		"@nestjs/schematics": "^10.0.2",
 		"@nestjs/testing": "^10.1.3",
 		"@swc/cli": "^0.1.62",
-		"@swc/core": "^1.3.76",
+		"@swc/core": "^1.3.78",
 		"@types/express": "^4.17.17",
 		"@types/express-session": "^1.17.7",
-		"@types/node": "^20.4.10",
+		"@types/node": "^20.5.1",
 		"@types/passport": "^1.0.12",
-		"@vitest/coverage-v8": "^0.34.1",
+		"@vitest/coverage-v8": "^0.34.2",
 		"eslint": "^8.47.0",
 		"eslint-config-mahir": "^0.0.31",
-		"prettier": "^3.0.1",
+		"prettier": "^3.0.2",
 		"typescript": "^5.1.6",
 		"unplugin-swc": "^1.3.2",
-		"vitest": "^0.34.1"
+		"vitest": "^0.34.2"
 	},
-	"packageManager": "yarn@3.6.1"
+	"packageManager": "yarn@3.6.2"
 }
