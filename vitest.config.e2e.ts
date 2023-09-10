@@ -1,5 +1,5 @@
 import swc from 'unplugin-swc';
-import { defineConfig } from 'vitest/config';
+import { defineConfig, type UserConfig } from 'vitest/config';
 
 export default defineConfig({
 	test: {
@@ -13,5 +13,5 @@ export default defineConfig({
 			'#zod': './src/lib/zod/',
 		},
 	},
-	plugins: [swc.vite()],
+	plugins: [swc.vite() as NonNullable<UserConfig['plugins']>[number]],
 });
