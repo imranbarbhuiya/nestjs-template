@@ -673,9 +673,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@nestjs/mapped-types@npm:2.0.2"
+"@nestjs/mapped-types@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@nestjs/mapped-types@npm:2.0.3"
   peerDependencies:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
     class-transformer: ^0.4.0 || ^0.5.0
@@ -686,20 +686,20 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 1fb0dca3838d0dc23107233e95a711e251bfbef9017589d3764c955a1cf190c8372179cee70e3674807896f53a98ab2ba80cd769b4f072fadefb708be1cc911b
+  checksum: 4f9ab9fc753cb2ef4a0f929b5ad93b737bfcbe5a2847e684ff095ed7ea4b4c00d0a980d68249edb2b25874abf4d931274f6dc5ad93b2bd65456f3880938b7cf2
   languageName: node
   linkType: hard
 
-"@nestjs/mongoose@npm:^10.0.1":
-  version: 10.0.1
-  resolution: "@nestjs/mongoose@npm:10.0.1"
+"@nestjs/mongoose@npm:^10.0.2":
+  version: 10.0.2
+  resolution: "@nestjs/mongoose@npm:10.0.2"
   peerDependencies:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
     "@nestjs/core": ^8.0.0 || ^9.0.0 || ^10.0.0
-    mongoose: ^6.0.2 || ^7.0.0
+    mongoose: ^6.0.2 || ^7.0.0 || ^8.0.0
     reflect-metadata: ^0.1.12
     rxjs: ^7.0.0
-  checksum: f5fac41b31eddd14fff12dd8a551ce00d1ff118d8e44c9f6b5a1c246b601158b380d5bbdfe6eda871e2e0f43ca0c7f1b64cb5a54feaeffd4e88ca43424d7824b
+  checksum: 0411049d32b78d49f77fec86799cdb08fdc933b717e30cfa08a1d8a58fe6f277ef4d182620afc97fd089d0c87c8dac1b6b87b8123dea6624878e012af645af06
   languageName: node
   linkType: hard
 
@@ -781,15 +781,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^7.1.14":
-  version: 7.1.14
-  resolution: "@nestjs/swagger@npm:7.1.14"
+"@nestjs/swagger@npm:^7.1.15":
+  version: 7.1.15
+  resolution: "@nestjs/swagger@npm:7.1.15"
   dependencies:
-    "@nestjs/mapped-types": 2.0.2
+    "@nestjs/mapped-types": 2.0.3
     js-yaml: 4.1.0
     lodash: 4.17.21
     path-to-regexp: 3.2.0
-    swagger-ui-dist: 5.9.0
+    swagger-ui-dist: 5.9.1
   peerDependencies:
     "@fastify/static": ^6.0.0
     "@nestjs/common": ^9.0.0 || ^10.0.0
@@ -804,7 +804,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: eef99bb9d23fd939aad33919774162242d925dcfb9ae248445db26d12e321d17f1c26ad52f5dc2e5d01b560273f34f1f52fa51826eaad2a78ac37240105df2fb
+  checksum: f23b9c3ebc9827440a071c79d16542c643a59433c84a99885989d4e4aa652676105c1c7023851d0696aacfadae5433d4799e595d09c3e6ea3bb78921a61d5816
   languageName: node
   linkType: hard
 
@@ -947,22 +947,22 @@ __metadata:
     "@nestjs/common": ^10.2.8
     "@nestjs/config": ^3.1.1
     "@nestjs/core": ^10.2.8
-    "@nestjs/mongoose": ^10.0.1
+    "@nestjs/mongoose": ^10.0.2
     "@nestjs/passport": ^10.0.2
     "@nestjs/platform-express": ^10.2.8
     "@nestjs/schematics": ^10.0.3
     "@nestjs/serve-static": ^4.0.0
-    "@nestjs/swagger": ^7.1.14
+    "@nestjs/swagger": ^7.1.15
     "@nestjs/testing": ^10.2.8
     "@oauth-everything/passport-discord": ^1.0.2
     "@swc/cli": ^0.1.62
     "@swc/core": ^1.3.96
     "@swc/helpers": ^0.5.3
     "@top-gg/sdk": ^3.1.6
-    "@types/express": ^4.17.20
-    "@types/express-session": ^1.17.9
-    "@types/node": ^20.8.10
-    "@types/passport": ^1.0.14
+    "@types/express": ^4.17.21
+    "@types/express-session": ^1.17.10
+    "@types/node": ^20.9.0
+    "@types/passport": ^1.0.15
     "@vitest/coverage-v8": ^0.34.6
     connect-mongo: ^5.1.0
     dotenv: ^16.3.1
@@ -1287,12 +1287,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express-session@npm:^1.17.9":
-  version: 1.17.9
-  resolution: "@types/express-session@npm:1.17.9"
+"@types/express-session@npm:^1.17.10":
+  version: 1.17.10
+  resolution: "@types/express-session@npm:1.17.10"
   dependencies:
     "@types/express": "*"
-  checksum: e66d50742a27389f3f1bb03b30eb96d74daf357db6cc5e549265e6610f2cff14539fec7e2b72c3f98ab1174eff7ed347e3fe4d3a2b9273a6d1367d78ee0add71
+  checksum: 2fb63b53e164f615a538d4be292695789a7f3105ce3246b8d3816e78eca05c8cce43d703af55c4f675c99cfb6fa512ae70a787e536e2b064f001fda897e0d5ab
   languageName: node
   linkType: hard
 
@@ -1308,15 +1308,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:^4.17.20":
-  version: 4.17.20
-  resolution: "@types/express@npm:4.17.20"
+"@types/express@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "@types/express@npm:4.17.21"
   dependencies:
     "@types/body-parser": "*"
     "@types/express-serve-static-core": ^4.17.33
     "@types/qs": "*"
     "@types/serve-static": "*"
-  checksum: bf8a97d283128e5129f9ccabbeef728ff3f0484465e0ae74a304bd0588fa6cb715ae68845650caba9a641944b7791ba125d02ddbd47a7e62aaefdd036570c6c5
+  checksum: fb238298630370a7392c7abdc80f495ae6c716723e114705d7e3fb67e3850b3859bbfd29391463a3fb8c0b32051847935933d99e719c0478710f8098ee7091c5
   languageName: node
   linkType: hard
 
@@ -1378,12 +1378,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.8.10":
-  version: 20.8.10
-  resolution: "@types/node@npm:20.8.10"
+"@types/node@npm:^20.9.0":
+  version: 20.9.0
+  resolution: "@types/node@npm:20.9.0"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 7c61190e43e8074a1b571e52ff14c880bc67a0447f2fe5ed0e1a023eb8a23d5f815658edb98890f7578afe0f090433c4a635c7c87311762544e20dd78723e515
+  checksum: bfd927da6bff8a32051fa44bb47ca32a56d2c8bc8ba0170770f181cc1fa3c0b05863c9b930f0ba8604a48d5eb0d319166601709ca53bf2deae0025d8b6c6b8a3
   languageName: node
   linkType: hard
 
@@ -1423,12 +1423,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/passport@npm:^1.0.14":
-  version: 1.0.14
-  resolution: "@types/passport@npm:1.0.14"
+"@types/passport@npm:^1.0.15":
+  version: 1.0.15
+  resolution: "@types/passport@npm:1.0.15"
   dependencies:
     "@types/express": "*"
-  checksum: 8e89c99d770db8acac54f15e06867a4795c441ef17007784dbb4494f5c5c371154d1ee7ef2abbadbcd10619e0ed3304f837cb78a1be478cb783a6ca98d49f3f9
+  checksum: bf96312a2824b180a3202e01ffb19860813cf3d5fa617a0f0a8d0a4a36899c955280db5697b0b243b4dfbc2032e6b7695fdc6990a93f27ca1d0e2a072e01066a
   languageName: node
   linkType: hard
 
@@ -7815,10 +7815,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swagger-ui-dist@npm:5.9.0":
-  version: 5.9.0
-  resolution: "swagger-ui-dist@npm:5.9.0"
-  checksum: 722f5d81adf0c0a940559952f48f7cd20a3f2a53aee8771c896eee8e3bed6f78c2f231960a7c30a4dca390d1205c0b2909d84062978013bb60febc478b9fc3d9
+"swagger-ui-dist@npm:5.9.1":
+  version: 5.9.1
+  resolution: "swagger-ui-dist@npm:5.9.1"
+  checksum: 4e5cf278ef1725b0770124ef4ecc9f75cb6fbab5d3e68aefffa024131aaf7b904514dc07000bb6b6ecdb606892fe5fa6e5f55d8fec978a838a18d25a010dab5b
   languageName: node
   linkType: hard
 
