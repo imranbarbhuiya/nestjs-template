@@ -379,10 +379,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.55.0":
-  version: 8.55.0
-  resolution: "@eslint/js@npm:8.55.0"
-  checksum: 34b001a95b16501fd64f525b1de3ab0e4c252e5820b74069004934cb13977fc04ba4522a3e8f8074bd6af49da10d3444cd49fa711819f425ad73d6bf46eea82d
+"@eslint/js@npm:8.56.0":
+  version: 8.56.0
+  resolution: "@eslint/js@npm:8.56.0"
+  checksum: 97a4b5ccf7e24f4d205a1fb0f21cdcd610348ecf685f6798a48dd41ba443f2c1eedd3050ff5a0b8f30b8cf6501ab512aa9b76e531db15e59c9ebaa41f3162e37
   languageName: node
   linkType: hard
 
@@ -663,9 +663,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:2.0.3":
-  version: 2.0.3
-  resolution: "@nestjs/mapped-types@npm:2.0.3"
+"@nestjs/mapped-types@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@nestjs/mapped-types@npm:2.0.4"
   peerDependencies:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
     class-transformer: ^0.4.0 || ^0.5.0
@@ -676,7 +676,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: f5e9306143d161e47accb19f179b1ed3f81d0fc2697eae12f781927323aa6a759fd7038118b2cdfa91a8c80f5d12277b868d79ffd7e027826aa989854e7d155f
+  checksum: 936005f02d12b36acefd59d8c0f83ad81aadcce76bb8df1b74d13b96f3f87a2e6277dcb2a89e2fdcbfca583ed9931b38b8473ec00d679ad9ab3bef9ae90d08c3
   languageName: node
   linkType: hard
 
@@ -756,15 +756,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^7.1.16":
-  version: 7.1.16
-  resolution: "@nestjs/swagger@npm:7.1.16"
+"@nestjs/swagger@npm:^7.1.17":
+  version: 7.1.17
+  resolution: "@nestjs/swagger@npm:7.1.17"
   dependencies:
-    "@nestjs/mapped-types": "npm:2.0.3"
+    "@nestjs/mapped-types": "npm:2.0.4"
     js-yaml: "npm:4.1.0"
     lodash: "npm:4.17.21"
     path-to-regexp: "npm:3.2.0"
-    swagger-ui-dist: "npm:5.9.1"
+    swagger-ui-dist: "npm:5.10.3"
   peerDependencies:
     "@fastify/static": ^6.0.0
     "@nestjs/common": ^9.0.0 || ^10.0.0
@@ -779,7 +779,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 9a1d856dd8acc6280eaf0c8d6ce7ec2e2e7264e59c1771fa92733390c8e5259dde89710f57cf84b1bad86503d0009c779ca6113c9de76e8245bb8e817ddb266b
+  checksum: bd7fa141d415ba1ed2727b4e35540d8cc3b42dff60fdb8cdf6b11f5ca0861fbed399583185a9bbc689964a5f45c08bd8872a13fbac0440b1ef6d7149a17ee9c6
   languageName: node
   linkType: hard
 
@@ -1024,7 +1024,7 @@ __metadata:
     "@nestjs/platform-express": "npm:^10.2.10"
     "@nestjs/schematics": "npm:^10.0.3"
     "@nestjs/serve-static": "npm:^4.0.0"
-    "@nestjs/swagger": "npm:^7.1.16"
+    "@nestjs/swagger": "npm:^7.1.17"
     "@nestjs/testing": "npm:^10.2.10"
     "@oauth-everything/passport-discord": "npm:^1.0.2"
     "@swc/cli": "npm:^0.1.63"
@@ -1038,14 +1038,14 @@ __metadata:
     "@vitest/coverage-v8": "npm:^1.0.4"
     connect-mongo: "npm:^5.1.0"
     dotenv: "npm:^16.3.1"
-    eslint: "npm:^8.55.0"
+    eslint: "npm:^8.56.0"
     eslint-config-mahir: "npm:^0.0.36"
     express: "npm:^4.18.2"
     express-session: "npm:^1.17.3"
     mongoose: "npm:^8.0.3"
     passport: "npm:^0.7.0"
     prettier: "npm:^3.1.1"
-    reflect-metadata: "npm:^0.1.14"
+    reflect-metadata: "npm:^0.2.1"
     rxjs: "npm:^7.8.1"
     tslib: "npm:^2.6.2"
     typescript: "npm:^5.3.3"
@@ -3825,14 +3825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.55.0":
-  version: 8.55.0
-  resolution: "eslint@npm:8.55.0"
+"eslint@npm:^8.56.0":
+  version: 8.56.0
+  resolution: "eslint@npm:8.56.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
     "@eslint/eslintrc": "npm:^2.1.4"
-    "@eslint/js": "npm:8.55.0"
+    "@eslint/js": "npm:8.56.0"
     "@humanwhocodes/config-array": "npm:^0.11.13"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@nodelib/fs.walk": "npm:^1.2.8"
@@ -3869,7 +3869,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: afd016cfbe9e9d667b3f98c14c681a7e518808f6c30856e56cbb02248900eac5bf6dc5e577a7eaec259539486db48ef7d16ef58fb14b1585ba7c84b35490c53c
+  checksum: ef6193c6e4cef20774b985a5cc2fd4bf6d3c4decd423117cbc4a0196617861745db291217ad3c537bc3a160650cca965bc818f55e1f3e446af1fcb293f9940a5
   languageName: node
   linkType: hard
 
@@ -7032,10 +7032,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:^0.1.14":
-  version: 0.1.14
-  resolution: "reflect-metadata@npm:0.1.14"
-  checksum: fcab9c17ec3b9fea0e2f748c2129aceb57c24af6d8d13842b8a77c8c79dde727d7456ce293e76e8d7b267d1dbf93eea4c5b3c9101299a789a075824f2e40f1ee
+"reflect-metadata@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "reflect-metadata@npm:0.2.1"
+  checksum: 394b293bd4a538b644ed0e8730c5aeb1e08e78972c915b3d2cf3b302241952cfee8f8bd8a0fdf7d8c7fa78d31d0585489061624692e2577d767abd120cad968c
   languageName: node
   linkType: hard
 
@@ -7953,10 +7953,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swagger-ui-dist@npm:5.9.1":
-  version: 5.9.1
-  resolution: "swagger-ui-dist@npm:5.9.1"
-  checksum: 14a991be289746889d0a4358815649213b7a8244a205539785b57fbf1f39fbffb39b09c16cb952398613ba8748ff83761c4657ceb8cce1996880cdc736e3dd88
+"swagger-ui-dist@npm:5.10.3":
+  version: 5.10.3
+  resolution: "swagger-ui-dist@npm:5.10.3"
+  checksum: 7fcfcffdaa07d08bd2de0d54d71ea9cd40a6fbd976fc0e9aeb9dc388aa60584ad5ea2bb21c281f559a18e2163fe6b3c269ba42249410cad3ec81255f3013fc7d
   languageName: node
   linkType: hard
 
