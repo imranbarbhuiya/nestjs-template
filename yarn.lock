@@ -182,19 +182,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@darraghor/eslint-plugin-nestjs-typed@npm:^4.6.1":
-  version: 4.6.1
-  resolution: "@darraghor/eslint-plugin-nestjs-typed@npm:4.6.1"
+"@darraghor/eslint-plugin-nestjs-typed@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@darraghor/eslint-plugin-nestjs-typed@npm:5.0.0"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:7.1.1"
     "@typescript-eslint/utils": "npm:7.1.1"
     eslint-module-utils: "npm:2.8.0"
     reflect-metadata: "npm:0.2.1"
   peerDependencies:
-    "@typescript-eslint/parser": ^6.0.0
+    "@typescript-eslint/parser": ^7.0.0
     class-validator: "*"
-    eslint: ^8.0.1
-  checksum: 10/abbbf23846a8dcd0b16f5018db9b15c3a15cfef632a0e0d5042cc1fa9ef44f384d6d89793112ee6728bc79b34c9745bb343df67490caf735499b02413c3167ea
+    eslint: ^8.56.0
+  checksum: 10/3db05ca6a44be8ba2f219310098ebe586021ee935cff58833fd9b5745ebc086292585ea7fd52943eb3d71682de9ee2f9f84cb0534dfd2c8218c835199715b124
   languageName: node
   linkType: hard
 
@@ -1090,7 +1090,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@roti/web-api@workspace:."
   dependencies:
-    "@darraghor/eslint-plugin-nestjs-typed": "npm:^4.6.1"
+    "@darraghor/eslint-plugin-nestjs-typed": "npm:^5.0.0"
     "@imranbarbhuiya/duration": "npm:^5.1.8"
     "@nestjs/cli": "npm:^10.3.2"
     "@nestjs/common": "npm:^10.3.3"
