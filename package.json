@@ -56,7 +56,7 @@
 		"eslint-config-mahir": "^0.0.43",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.4",
-		"unplugin-swc": "^1.4.4",
+		"unplugin-swc": "^1.4.5",
 		"vitest": "^1.4.0"
 	},
 	"packageManager": "yarn@4.1.1"
