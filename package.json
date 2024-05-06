@@ -52,7 +52,7 @@
 		"@types/node": "^20.12.8",
 		"@types/passport": "^1.0.16",
 		"@vitest/coverage-v8": "^1.6.0",
-		"eslint": "^8.57.0",
+		"eslint": "^9.2.0",
 		"eslint-config-mahir": "^0.0.43",
 		"prettier": "^3.2.5",
 		"typescript": "^5.4.5",
