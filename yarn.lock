@@ -1115,12 +1115,12 @@ __metadata:
     "@nestjs/testing": "npm:^10.3.8"
     "@oauth-everything/passport-discord": "npm:^1.0.2"
     "@swc/cli": "npm:^0.3.12"
-    "@swc/core": "npm:^1.5.5"
+    "@swc/core": "npm:^1.5.7"
     "@swc/helpers": "npm:^0.5.11"
     "@top-gg/sdk": "npm:^3.1.6"
     "@types/express": "npm:^4.17.21"
     "@types/express-session": "npm:^1.18.0"
-    "@types/node": "npm:^20.12.11"
+    "@types/node": "npm:^20.12.12"
     "@types/passport": "npm:^1.0.16"
     "@vitest/coverage-v8": "npm:^1.6.0"
     connect-mongo: "npm:^5.1.0"
@@ -1129,14 +1129,14 @@ __metadata:
     eslint-config-mahir: "npm:^0.0.43"
     express: "npm:^4.19.2"
     express-session: "npm:^1.18.0"
-    mongoose: "npm:^8.3.4"
+    mongoose: "npm:^8.4.0"
     passport: "npm:^0.7.0"
     prettier: "npm:^3.2.5"
     reflect-metadata: "npm:^0.2.1"
     rxjs: "npm:^7.8.1"
     tslib: "npm:^2.6.2"
     typescript: "npm:^5.4.5"
-    undici: "npm:^6.16.1"
+    undici: "npm:^6.17.0"
     unplugin-swc: "npm:^1.4.5"
     vitest: "npm:^1.6.0"
     zod: "npm:^3.23.8"
@@ -1191,92 +1191,92 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-darwin-arm64@npm:1.5.5"
+"@swc/core-darwin-arm64@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-darwin-arm64@npm:1.5.7"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-darwin-x64@npm:1.5.5"
+"@swc/core-darwin-x64@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-darwin-x64@npm:1.5.7"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.5.5"
+"@swc/core-linux-arm-gnueabihf@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.5.7"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.5.5"
+"@swc/core-linux-arm64-gnu@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.5.7"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-linux-arm64-musl@npm:1.5.5"
+"@swc/core-linux-arm64-musl@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-linux-arm64-musl@npm:1.5.7"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-linux-x64-gnu@npm:1.5.5"
+"@swc/core-linux-x64-gnu@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-linux-x64-gnu@npm:1.5.7"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-linux-x64-musl@npm:1.5.5"
+"@swc/core-linux-x64-musl@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-linux-x64-musl@npm:1.5.7"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.5.5"
+"@swc/core-win32-arm64-msvc@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.5.7"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.5.5"
+"@swc/core-win32-ia32-msvc@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.5.7"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core-win32-x64-msvc@npm:1.5.5"
+"@swc/core-win32-x64-msvc@npm:1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core-win32-x64-msvc@npm:1.5.7"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.5.5":
-  version: 1.5.5
-  resolution: "@swc/core@npm:1.5.5"
+"@swc/core@npm:^1.5.7":
+  version: 1.5.7
+  resolution: "@swc/core@npm:1.5.7"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.5.5"
-    "@swc/core-darwin-x64": "npm:1.5.5"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.5.5"
-    "@swc/core-linux-arm64-gnu": "npm:1.5.5"
-    "@swc/core-linux-arm64-musl": "npm:1.5.5"
-    "@swc/core-linux-x64-gnu": "npm:1.5.5"
-    "@swc/core-linux-x64-musl": "npm:1.5.5"
-    "@swc/core-win32-arm64-msvc": "npm:1.5.5"
-    "@swc/core-win32-ia32-msvc": "npm:1.5.5"
-    "@swc/core-win32-x64-msvc": "npm:1.5.5"
+    "@swc/core-darwin-arm64": "npm:1.5.7"
+    "@swc/core-darwin-x64": "npm:1.5.7"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.5.7"
+    "@swc/core-linux-arm64-gnu": "npm:1.5.7"
+    "@swc/core-linux-arm64-musl": "npm:1.5.7"
+    "@swc/core-linux-x64-gnu": "npm:1.5.7"
+    "@swc/core-linux-x64-musl": "npm:1.5.7"
+    "@swc/core-win32-arm64-msvc": "npm:1.5.7"
+    "@swc/core-win32-ia32-msvc": "npm:1.5.7"
+    "@swc/core-win32-x64-msvc": "npm:1.5.7"
     "@swc/counter": "npm:^0.1.2"
-    "@swc/types": "npm:^0.1.5"
+    "@swc/types": "npm:0.1.7"
   peerDependencies:
     "@swc/helpers": ^0.5.0
   dependenciesMeta:
@@ -1303,7 +1303,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10/31e6dc50eeb549d1e52f21e1c5ae63b714bf4488c70cc4106264de378048ca35c0264c640590fbbb760c0cbe7f2c91291ef20e6af5c46dc31b5da88e8b946f0c
+  checksum: 10/83e03908db40f2133c3624a83d4550336d7a56e64af7d42fd959c746b8da950a253f3c6d9eaa3467e10abeda024aa6b039a987adc839326f969e1d26625f14ef
   languageName: node
   linkType: hard
 
@@ -1323,10 +1323,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/types@npm:^0.1.5":
-  version: 0.1.5
-  resolution: "@swc/types@npm:0.1.5"
-  checksum: 10/5f4de8c60d2623bed607c7fa1e0cee4ffc682af28d5ffe88dc9ed9903a1c2088ccc39f684689d6bb314595c9fbb560beaec773d633be515fb856ffc81d738822
+"@swc/types@npm:0.1.7":
+  version: 0.1.7
+  resolution: "@swc/types@npm:0.1.7"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  checksum: 10/ed66c26b36972a74f852c1781fadc75946578abfeeea58f110684833b5d1e70f28a77ddb82fd5bf3cf3c4dad0e1b6a1c924d7e2cc7a99f9b16ed16fe266bba25
   languageName: node
   linkType: hard
 
@@ -1500,12 +1502,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.11":
-  version: 20.12.11
-  resolution: "@types/node@npm:20.12.11"
+"@types/node@npm:^20.12.12":
+  version: 20.12.12
+  resolution: "@types/node@npm:20.12.12"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/c6afe7c2c4504a4f488814d7b306ebad16bf42cbb43bf9db9fe1aed8c5fb99235593c3be5088979a64526b106cf022256688e2f002811be8273d87dc2e0d484f
+  checksum: 10/e3945da0a3017bdc1f88f15bdfb823f526b2a717bd58d4640082d6eb0bd2794b5c99bfb914b9e9324ec116dce36066990353ed1c777e8a7b0641f772575793c4
   languageName: node
   linkType: hard
 
@@ -2633,10 +2635,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^6.4.0, bson@npm:^6.5.0":
-  version: 6.6.0
-  resolution: "bson@npm:6.6.0"
-  checksum: 10/22f6f9395ffd0306efc03aa876149307738ec3ccb2384eca421493b8c71498d057b1f5b6caddf6f3154feaa5b24de988c502aaa1b519d502d3affdc35d623fd9
+"bson@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "bson@npm:6.7.0"
+  checksum: 10/d4bc1d9514c67dbcb8451b7be95704e6e7cb262f0d11c938715c21297ab5550b0e2f3badf5480d53c4b3f899a84f2ed8708f3f46cad83ec52059f076aad8e1cd
   languageName: node
   linkType: hard
 
@@ -6169,12 +6171,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:6.5.0":
-  version: 6.5.0
-  resolution: "mongodb@npm:6.5.0"
+"mongodb@npm:6.6.2":
+  version: 6.6.2
+  resolution: "mongodb@npm:6.6.2"
   dependencies:
     "@mongodb-js/saslprep": "npm:^1.1.5"
-    bson: "npm:^6.4.0"
+    bson: "npm:^6.7.0"
     mongodb-connection-string-url: "npm:^3.0.0"
   peerDependencies:
     "@aws-sdk/credential-providers": ^3.188.0
@@ -6199,22 +6201,22 @@ __metadata:
       optional: true
     socks:
       optional: true
-  checksum: 10/537fcb59035c907b5e0a85f806893c4a0936e8d04a0cf788f0720b539195160036d6c43e40bdc0c48432d24c42e969c296adcb1eabbf70a2c5a7aafe5459e800
+  checksum: 10/ccc4c952970c6f626d69396dcca07ee5f5b58871555e28b563a38c5cd2147b3d2844254f6e0aaffc7d807efa6a8a7ab7dbade41e83aa2de35bea18876ea426db
   languageName: node
   linkType: hard
 
-"mongoose@npm:^8.3.4":
-  version: 8.3.4
-  resolution: "mongoose@npm:8.3.4"
+"mongoose@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "mongoose@npm:8.4.0"
   dependencies:
-    bson: "npm:^6.5.0"
+    bson: "npm:^6.7.0"
     kareem: "npm:2.6.3"
-    mongodb: "npm:6.5.0"
+    mongodb: "npm:6.6.2"
     mpath: "npm:0.9.0"
     mquery: "npm:5.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/eadaec67c8ab13989dc515b0d63eefb7344ccbc7cea1bab7f57ce7e7285f6ba9cfb0f8c19ddf4ce1dcef632d9fc4f3eff9c23fcc4bd72152e1bba53173caad5b
+  checksum: 10/c5b72264736bab40da685d178c19f1d57d3e83fd0c29034e4c2a14c3989dc57956949959694a0b87a4043e62cc0d7561dd9112e0b63b86de9d4701652ed6c08a
   languageName: node
   linkType: hard
 
@@ -8623,10 +8625,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^6.16.1":
-  version: 6.16.1
-  resolution: "undici@npm:6.16.1"
-  checksum: 10/07dc67ec7a81323952effcbdb4aa674dd4f23aa872a03bdd4773d4e3b0b2aed268d116c8cfb012ecf272d2d1a0399055bf6ed134dd79b6a0920bab83ca483fcb
+"undici@npm:^6.17.0":
+  version: 6.17.0
+  resolution: "undici@npm:6.17.0"
+  checksum: 10/e54ae88f9ce4e923f2d1e209ad42d028e7d2b207ba81e6c1f3af9533b4aa33863120f61bc58fb5f7d4dd6a90c2bc8c96d892dbb8bf5be80e0cd422f31d15a9ef
   languageName: node
   linkType: hard
 
