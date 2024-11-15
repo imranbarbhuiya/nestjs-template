@@ -24,7 +24,7 @@
 		"@nestjs/passport": "^10.0.3",
 		"@nestjs/platform-express": "^10.4.5",
 		"@nestjs/serve-static": "^4.0.2",
-		"@nestjs/swagger": "^7.4.2",
+		"@nestjs/swagger": "^8.0.7",
 		"@oauth-everything/passport-discord": "^1.0.2",
 		"@swc/helpers": "^0.5.13",
 		"@top-gg/sdk": "^3.1.6",
