@@ -2051,7 +2051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/tsdoc@npm:0.15.0, @microsoft/tsdoc@npm:^0.15.0":
+"@microsoft/tsdoc@npm:0.15.0":
   version: 0.15.0
   resolution: "@microsoft/tsdoc@npm:0.15.0"
   checksum: 10/fd025e5e3966248cd5477b9ddad4e9aa0dd69291f372a207f18a686b3097dcf5ecf38325caf0f4ad2697f1f39fd45b536e4ada6756008b8bcc5eccbc3201313d
@@ -2336,11 +2336,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:2.0.6":
-  version: 2.0.6
-  resolution: "@nestjs/mapped-types@npm:2.0.6"
+"@nestjs/mapped-types@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@nestjs/mapped-types@npm:2.1.0"
   peerDependencies:
-    "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
+    "@nestjs/common": ^10.0.0 || ^11.0.0
     class-transformer: ^0.4.0 || ^0.5.0
     class-validator: ^0.13.0 || ^0.14.0
     reflect-metadata: ^0.1.12 || ^0.2.0
@@ -2349,7 +2349,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/1162badc51322c21c8ff608e7b8bcd58d21ad466c88294e662996ce0d8501262a38d08954c1247da475b84b4c5bf5b0d533046ea6c21ff495a1d5d31a43cbf00
+  checksum: 10/4d75143e233f743338ba0db0b92301ab297221bb8842d2b999954f8d90f8ccee68350e2c01381f97a7f30af230b8b783e066939f8afe2d7c8abb46596776858b
   languageName: node
   linkType: hard
 
@@ -2443,20 +2443,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "@nestjs/swagger@npm:8.1.0"
+"@nestjs/swagger@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "@nestjs/swagger@npm:11.0.3"
   dependencies:
-    "@microsoft/tsdoc": "npm:^0.15.0"
-    "@nestjs/mapped-types": "npm:2.0.6"
+    "@microsoft/tsdoc": "npm:0.15.0"
+    "@nestjs/mapped-types": "npm:2.1.0"
     js-yaml: "npm:4.1.0"
     lodash: "npm:4.17.21"
-    path-to-regexp: "npm:3.3.0"
+    path-to-regexp: "npm:8.2.0"
     swagger-ui-dist: "npm:5.18.2"
   peerDependencies:
-    "@fastify/static": ^6.0.0 || ^7.0.0
-    "@nestjs/common": ^9.0.0 || ^10.0.0
-    "@nestjs/core": ^9.0.0 || ^10.0.0
+    "@fastify/static": ^8.0.0
+    "@nestjs/common": ^11.0.1
+    "@nestjs/core": ^11.0.1
     class-transformer: "*"
     class-validator: "*"
     reflect-metadata: ^0.1.12 || ^0.2.0
@@ -2467,7 +2467,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/06d13915185fb6935f5cb2b7d0cdf9fb88198b3e949ad5330e9a0c234bfb382d0192d2be6163b30109197364891956b183b94c57a590c81cb7e960273ab919c4
+  checksum: 10/a6cb425b0e38daa14b907b1f8c03616661d58a94b1f584296635a6fe5d13e2cf5fb70db9bbf9fd3170a91bbe5ecdbe316bc27626252f46a0a2ca7d7d3ed21ffa
   languageName: node
   linkType: hard
 
@@ -2777,7 +2777,7 @@ __metadata:
     "@nestjs/platform-express": "npm:^10.4.13"
     "@nestjs/schematics": "npm:^10.2.3"
     "@nestjs/serve-static": "npm:^4.0.2"
-    "@nestjs/swagger": "npm:^8.1.0"
+    "@nestjs/swagger": "npm:^11.0.3"
     "@nestjs/testing": "npm:^10.4.13"
     "@oauth-everything/passport-discord": "npm:^1.0.2"
     "@swc/cli": "npm:^0.5.2"
@@ -9462,6 +9462,13 @@ __metadata:
   version: 3.3.0
   resolution: "path-to-regexp@npm:3.3.0"
   checksum: 10/8d256383af8db66233ee9027cfcbf8f5a68155efbb4f55e784279d3ab206dcaee554ddb72ff0dae97dd2882af9f7fa802634bb7cffa2e796927977e31b829259
+  languageName: node
+  linkType: hard
+
+"path-to-regexp@npm:8.2.0":
+  version: 8.2.0
+  resolution: "path-to-regexp@npm:8.2.0"
+  checksum: 10/23378276a172b8ba5f5fb824475d1818ca5ccee7bbdb4674701616470f23a14e536c1db11da9c9e6d82b82c556a817bbf4eee6e41b9ed20090ef9427cbb38e13
   languageName: node
   linkType: hard
 
