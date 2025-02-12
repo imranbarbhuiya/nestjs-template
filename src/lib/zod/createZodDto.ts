@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/method-signature-style */
 import type { ZodType } from 'zod';
 
 /**
@@ -12,8 +13,8 @@ export interface CompatibleZodIssue {
 	path: (number | string)[];
 }
 export type CompatibleZodType = Pick<ZodType<unknown>, '_input' | '_output'> & {
-	parse: (...args: unknown[]) => unknown;
-	safeParse: (...args: unknown[]) =>
+	parse(...args: unknown[]): unknown;
+	safeParse(...args: unknown[]):
 		| {
 				data: unknown;
 				success: true;
@@ -30,7 +31,7 @@ export type CompatibleZodInfer<T extends CompatibleZodType> = T['_output'];
 
 export interface ZodDtoStatic<T> {
 	new (): T;
-	create: (input: unknown) => T;
+	create(input: unknown): T;
 	zodSchema: CompatibleZodType;
 }
 

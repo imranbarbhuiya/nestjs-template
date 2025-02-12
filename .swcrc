@@ -2,10 +2,11 @@
 	"$schema": "https://json.schemastore.org/swcrc",
 	"sourceMaps": true,
 	"module": {
-		"type": "commonjs",
-		"strict": true
+		"type": "es6",
+		"strict": true,
+		"resolveFully": true
 	},
-	// "exclude": ["^.+\\.test\\.ts$"],
+	"exclude": ["^.+\\.d\\.ts$"],
 	"jsc": {
 		"parser": {
 			"syntax": "typescript",
@@ -19,6 +20,9 @@
 			"legacyDecorator": true,
 			"decoratorMetadata": true
 		},
-		"externalHelpers": true
+		"externalHelpers": true,
+		"experimental": {
+			"keepImportAttributes": true
+		}
 	}
 }

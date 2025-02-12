@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"types": ["vitest/globals"],
 		"target": "esnext",
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"lib": ["esnext"],
 		"allowJs": true,
 		"strict": true,
 		"noEmit": true,
@@ -20,24 +20,27 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUnusedParameters": true,
 		"pretty": true,
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
-		"module": "commonjs",
+		"module": "preserve",
+		"verbatimModuleSyntax": true,
+		"checkJs": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"allowSyntheticDefaultImports": true,
 		"sourceMap": true,
-		"outDir": "./dist",
+		"outDir": "dist",
 		"incremental": true,
 		"skipLibCheck": true,
 		"strictBindCallApply": false,
 		"importHelpers": true,
+		"baseUrl": ".",
 		"paths": {
-			"@app/mongoose": ["./src/lib/mongo/"],
-			"@app/mongoose/*": ["./src/lib/mongo/*"],
-			"@zod": ["./src/lib/zod/"]
+			"#app/mongoose": ["./src/lib/mongo/"],
+			"#app/mongoose/*": ["./src/lib/mongo/*"],
+			"#zod": ["./src/lib/zod/"]
 		}
 	},
-	"include": ["**/*.ts"],
+	"include": ["src/**/*", "process-env.d.ts"],
 	"exclude": ["node_modules"]
 }

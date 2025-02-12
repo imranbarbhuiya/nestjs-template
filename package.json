@@ -15,6 +15,11 @@
 		"test:e2e": "vitest run --config ./vitest.config.e2e.ts",
 		"typecheck": "tsc -p tsconfig.eslint.json"
 	},
+	"imports": {
+		"#app/mongoose": "./dist/lib/mongo/index.js",
+		"#app/mongoose/*": "./dist/lib/mongo/*.js",
+		"#zod": "./dist/lib/zod/index.js"
+	},
 	"dependencies": {
 		"@imranbarbhuiya/duration": "^5.1.8",
 		"@nestjs/common": "^11.0.9",

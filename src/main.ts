@@ -3,13 +3,13 @@ import process from 'node:process';
 import { Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
-import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
+import { FastifyAdapter, type NestFastifyApplication } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import helmet from 'helmet';
 
-import { ZodValidationPipe, patchNestjsSwagger } from '@zod';
-
 import { AppModule } from './app.module';
+
+import { ZodValidationPipe, patchNestjsSwagger } from '#zod';
 
 const envService = new ConfigService();
 const logger = new Logger();

@@ -1,4 +1,4 @@
-import { SchemaObjectFactory } from '@nestjs/swagger/dist/services/schema-object-factory';
+import { SchemaObjectFactory } from '@nestjs/swagger/dist/services/schema-object-factory.js';
 
 import { zodTypeToOpenApi } from './zodTypeToOpenApi';
 
