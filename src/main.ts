@@ -3,11 +3,11 @@ import process from 'node:process';
 import { Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
+import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import helmet from 'helmet';
+
 import { ZodValidationPipe, patchNestjsSwagger } from '@zod';
-import MongoStore from 'connect-mongo';
-import session from 'express-session';
-import passport from 'passport';
 
 import { AppModule } from './app.module';
 
@@ -16,46 +16,31 @@ const logger = new Logger();
 
 async function bootstrap() {
 	logger.log('Starting Web API...');
-	const app = await NestFactory.create(AppModule, {
-		rawBody: true,
+	const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter(), {
 		cors: {
 			origin: [
-				'https://www.roti.xyz',
-				process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://roti.xyz',
+				'https://www.example.com',
+				process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://example.com',
 			],
 			credentials: true,
 		},
-		bodyParser: false,
 	});
+	app
+		.getHttpAdapter()
+		.getInstance()
+		.addHook('onRequest', (request: any, reply: any, done: any) => {
+			reply.setHeader = function setHeader(key: any, value: any) {
+				return this.raw.setHeader(key, value);
+			};
+			reply.end = function end() {
+				this.raw.end();
+			};
+			request.res = reply;
+			done();
+		});
+	app.use(helmet());
+	app.useGlobalInterceptors();
 	app.useGlobalPipes(new ZodValidationPipe());
-	app.use(
-		session({
-			secret:
-				"Fj5C:y27SB6qqY9S>_KA?~H{(mUEd5*Xwmqt+Y{)3:,_Z+dCqg,jR!,]_z,Y`H{K*,}w$-djH5d5F':_KEx]TNL.Qv5MnMh]a;3N=x:qE<2]vn}[=hj+S69!8[MQ9B`1",
-			cookie: {
-				maxAge: 60_000 * 60 * 24 * 7,
-				// secure: process.env.NODE_ENV === 'production',
-				// httpOnly: true,
-				// domain: process.env.NODE_ENV === 'production' ? '.roti.xyz' : 'localhost',
-			},
-			resave: false,
-			saveUninitialized: false,
-			store: MongoStore.create({
-				mongoOptions: {
-					minPoolSize: 10,
-					connectTimeoutMS: 30_000,
-					socketTimeoutMS: 30_000 * 3,
-					family: 4,
-					serverSelectionTimeoutMS: 30_000,
-					heartbeatFrequencyMS: 1_500,
-				},
-				mongoUrl: process.env.DB_URI,
-			}),
-		}),
-	);
-
-	app.use(passport.initialize());
-	app.use(passport.session());
 
 	const PORT = envService.getOrThrow('PORT');
 
@@ -63,7 +48,7 @@ async function bootstrap() {
 		patchNestjsSwagger();
 		const config = new DocumentBuilder()
 			.setTitle('Web Backend')
-			.setDescription('Backend api of roti site')
+			.setDescription('Backend api template with nestjs')
 			.setVersion('1.0')
 			.build();
 
@@ -72,7 +57,7 @@ async function bootstrap() {
 		logger.log(`Swagger is running on http://localhost:${PORT}/docs`);
 	}
 
-	await app.listen(PORT);
+	await app.listen(PORT, '0.0.0.0');
 	logger.log(`Application is listening on http://localhost:${PORT}`);
 }
 

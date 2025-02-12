@@ -26,9 +26,7 @@ export const randomNumber = (min: number, max: number): number => Math.floor(Mat
 export const getRandom = <T>(array: T[], amount: number): T[] => {
 	const arr = [...array];
 
-	if (!arr.length || !amount) {
-		return [];
-	}
+	if (!arr.length || !amount) return [];
 
 	return Array.from(
 		{ length: Math.min(amount, arr.length) },
@@ -43,9 +41,7 @@ export const getRandom = <T>(array: T[], amount: number): T[] => {
  * @returns
  */
 
-export const randomBetween = (min: number, max: number) => {
-	return Math.floor(Math.random() * (max - min)) + min;
-};
+export const randomBetween = (min: number, max: number) => Math.floor(Math.random() * (max - min)) + min;
 
 /**
  *

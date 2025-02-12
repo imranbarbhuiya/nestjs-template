@@ -6,18 +6,13 @@ export const patchNestjsSwagger = () => {
 	// @ts-expect-error - patched property
 	if (SchemaObjectFactory.prototype.__zodDtoPatched) return;
 
-	// eslint-disable-next-line @typescript-eslint/unbound-method
 	const orgExploreModelSchema = SchemaObjectFactory.prototype.exploreModelSchema;
 
 	SchemaObjectFactory.prototype.exploreModelSchema = function exploreModelSchema(type, schemas, schemaRefsStack) {
 		let typeValue = type as unknown as { name: string; zodSchema: any };
-		if (this['isLazyTypeFunc'](typeValue)) {
-			typeValue = (type as Function)();
-		}
+		if (this['isLazyTypeFunc'](typeValue)) typeValue = (type as Function)();
 
-		if (!typeValue.zodSchema) {
-			return orgExploreModelSchema.call(this, typeValue, schemas, schemaRefsStack);
-		}
+		if (!typeValue.zodSchema) return orgExploreModelSchema.call(this, typeValue, schemas, schemaRefsStack);
 
 		const openApiDef = zodTypeToOpenApi(typeValue.zodSchema);
 

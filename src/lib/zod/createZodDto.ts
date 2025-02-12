@@ -1,4 +1,4 @@
-import type * as z from 'zod';
+import type { ZodType } from 'zod';
 
 /**
  * ZodType is a very complex interface describing not just public properties but private ones as well
@@ -11,9 +11,9 @@ export interface CompatibleZodIssue {
 	message: string;
 	path: (number | string)[];
 }
-export type CompatibleZodType = Pick<z.ZodType<unknown>, '_input' | '_output'> & {
-	parse(...args: unknown[]): unknown;
-	safeParse(...args: unknown[]):
+export type CompatibleZodType = Pick<ZodType<unknown>, '_input' | '_output'> & {
+	parse: (...args: unknown[]) => unknown;
+	safeParse: (...args: unknown[]) =>
 		| {
 				data: unknown;
 				success: true;
@@ -30,7 +30,7 @@ export type CompatibleZodInfer<T extends CompatibleZodType> = T['_output'];
 
 export interface ZodDtoStatic<T> {
 	new (): T;
-	create(input: unknown): T;
+	create: (input: unknown) => T;
 	zodSchema: CompatibleZodType;
 }
 

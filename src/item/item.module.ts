@@ -1,5 +1,6 @@
-import { MongoItemModule, MongoItemService } from '@app/mongoose';
 import { Module } from '@nestjs/common';
+
+import { MongoItemModule, MongoItemService } from '@app/mongoose';
 
 import { ItemController } from './item.controller';
 import { ItemService } from './item.service';

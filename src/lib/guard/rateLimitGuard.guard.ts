@@ -11,7 +11,7 @@ import {
 
 import { TokenBucket } from '../../util/TokenBucket';
 
-import type { Request } from 'express';
+import type { FastifyRequest } from 'fastify';
 
 const userLimiters: Map<string, Map<string, TokenBucket>> = new Map();
 const routeLimits: Map<string, { bucketSize: number; maxTokenUsePerSecond: number; route: string }> = new Map();
@@ -61,16 +61,17 @@ export class RateLimitGuard implements CanActivate {
 	 * }
 	 * ```
 	 */
-	constructor(bucketSize: number, maxTokenUsePerSecond: number) {
+	public constructor(bucketSize: number, maxTokenUsePerSecond: number) {
 		this.bucketSize = bucketSize;
 		this.maxTokenUsePerSecond = maxTokenUsePerSecond;
 	}
 
 	public canActivate(context: ExecutionContext) {
-		const req = context.switchToHttp().getRequest<Request>();
-		const userId = req.user?.id;
-		const route: string = req.route.path;
-		const ip = (req.headers['x-forwarded-for'] as string | undefined)?.split(',')[0] ?? req.socket.remoteAddress;
+		const request = context.switchToHttp().getRequest<FastifyRequest & { user?: any }>();
+		const userId = request.user?.id;
+		const route: string = request.routeOptions.url ?? request.url;
+		const ip =
+			(request.headers['x-forwarded-for'] as string | undefined)?.split(',')[0] ?? request.socket.remoteAddress;
 
 		const cacheKey = userId ?? ip;
 

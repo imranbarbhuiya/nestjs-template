@@ -1,5 +1,6 @@
-import { createZodDto } from '@zod';
 import { z } from 'zod';
+
+import { createZodDto } from '@zod';
 
 const socialMediaSchema = z
 	.object({

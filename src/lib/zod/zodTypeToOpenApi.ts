@@ -14,6 +14,7 @@ import {
 	ZodTransformer,
 	ZodTuple,
 	ZodUnion,
+	ZodDate,
 	type ZodTypeAny,
 	type ZodTypeDef,
 } from 'zod';
@@ -28,18 +29,26 @@ export interface OpenApiBuilderProperties {
 }
 
 export interface ZodTypeDefOpenApi extends ZodTypeDef {
-	openApi: OpenApiBuilderProperties;
+	openApi?: OpenApiBuilderProperties;
 }
 
 export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 	const zodDef = zodType._def;
 
 	const openApiElement = (element: ApiPropertyOptions): ApiPropertyOptions => {
+		const required = element.required as boolean | undefined;
+
+		const type = (element.type ?? (zodDef as ZodTypeDefOpenApi).openApi?.type) as 'string';
+
 		return {
-			required: true,
 			...element,
 			...(zodDef as ZodTypeDefOpenApi).openApi,
-			description: zodType.description,
+			type,
+			description: zodType.description?.startsWith('Deprecated:')
+				? zodType.description.slice('Deprecated:'.length).trim()
+				: zodType.description,
+			deprecated: zodType.description?.startsWith('Deprecated:'),
+			required,
 		};
 	};
 
@@ -48,17 +57,20 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 			const shape = zodDef.shape();
 			const shapeKeys = Object.keys(shape);
 			const properties: Record<string, any> = {};
+			const required = [];
 
 			for (const key of shapeKeys) {
 				const propZodType = shape[key];
-
+				const isOptional = [ZodOptional.name, ZodDefault.name].includes(propZodType.constructor.name);
 				properties[key] = zodTypeToOpenApi(propZodType);
+				if (!isOptional) required.push(key);
 			}
 
 			return openApiElement({
 				type: 'object',
 				properties,
 				description: zodDef.description,
+				required,
 			});
 		}
 
@@ -66,7 +78,6 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 		case ZodOptional.name: {
 			return openApiElement({
 				...zodTypeToOpenApi(zodDef.innerType),
-				required: false,
 			});
 		}
 
@@ -87,7 +98,7 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 			const enumValues = Object.values(zodDef.values);
 
 			return openApiElement({
-				type: typeof enumValues[0],
+				type: typeof enumValues[0] as 'number' | 'string',
 				enum: enumValues,
 				example: enumValues.map((value) => `'${value}'`).join(' | '),
 			});
@@ -97,9 +108,8 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 			const enumValues = zodDef.values;
 
 			return openApiElement({
-				type: typeof enumValues[0],
+				type: typeof enumValues[0] as 'number' | 'string',
 				enum: Object.values(enumValues),
-				// @ts-expect-error x-enumNames is not typed
 				'x-enumNames': Object.keys(enumValues),
 			});
 		}
@@ -110,6 +120,8 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 			return openApiElement({
 				type: 'string',
 				enum: [value],
+				// @ts-expect-error const is not typed
+				const: value,
 			});
 		}
 
@@ -172,9 +184,16 @@ export const zodTypeToOpenApi = (zodType: ZodTypeAny): ApiPropertyOptions => {
 			});
 		}
 
+		case ZodDate.name: {
+			return openApiElement({
+				type: 'string',
+				format: 'date-time',
+			});
+		}
+
 		default: {
 			return openApiElement({
-				type: zodType.constructor.name.replace('Zod', '').toLowerCase(),
+				type: zodType.constructor.name.replace('Zod', '').toLowerCase() as 'string',
 			});
 		}
 	}

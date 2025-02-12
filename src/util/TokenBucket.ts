@@ -56,9 +56,7 @@ export class TokenBucket {
 		if (this.bucket > 0) {
 			this.bucket--;
 			return true;
-		} else {
-			return false;
-		}
+		} else return false;
 	}
 
 	private refillBucket() {

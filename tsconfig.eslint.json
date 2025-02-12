@@ -3,5 +3,5 @@
 	"compilerOptions": {
 		"noEmit": true
 	},
-	"include": ["src", "tests", "vitest.config.ts", "vitest.config.e2e.ts", "process-env.d.ts", "extensionless-loader.js"]
+	"include": ["src", "tests", "vitest.config.ts", "vitest.config.e2e.ts", "process-env.d.ts", "eslint.config.js"]
 }
