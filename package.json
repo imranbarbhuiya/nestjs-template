@@ -37,7 +37,7 @@
 		"rxjs": "^7.8.2",
 		"tslib": "^2.8.1",
 		"undici": "^7.10.0",
-		"zod": "^3.25.43"
+		"zod": "^3.25.46"
 	},
 	"devDependencies": {
 		"@darraghor/eslint-plugin-nestjs-typed": "^6.6.0",
@@ -52,7 +52,7 @@
 		"eslint-config-mahir": "^1.0.7",
 		"prettier": "^3.5.3",
 		"typescript": "^5.8.3",
-		"unplugin-swc": "^1.5.3",
+		"unplugin-swc": "^1.5.4",
 		"vitest": "^3.1.4"
 	},
 	"packageManager": "yarn@4.9.1"

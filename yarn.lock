@@ -8799,9 +8799,9 @@ __metadata:
     tslib: "npm:^2.8.1"
     typescript: "npm:^5.8.3"
     undici: "npm:^7.10.0"
-    unplugin-swc: "npm:^1.5.3"
+    unplugin-swc: "npm:^1.5.4"
     vitest: "npm:^3.1.4"
-    zod: "npm:^3.25.43"
+    zod: "npm:^3.25.46"
   languageName: unknown
   linkType: soft
 
@@ -11382,27 +11382,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-swc@npm:^1.5.3":
-  version: 1.5.3
-  resolution: "unplugin-swc@npm:1.5.3"
+"unplugin-swc@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "unplugin-swc@npm:1.5.4"
   dependencies:
     "@rollup/pluginutils": "npm:^5.1.4"
     load-tsconfig: "npm:^0.2.5"
-    unplugin: "npm:^2.3.4"
+    unplugin: "npm:^2.3.5"
   peerDependencies:
     "@swc/core": ^1.2.108
-  checksum: 10/388a674c5ae839a50b865c971fd46d9ce59c972a3fb115001b5429645757a9cab4dd8bfca75dd7da2a17e7382c95d85a11b19c3ae2db9ff569590e8e62d02fa1
+  checksum: 10/6685a9e8d199aefb372fefa556aa4042e14703af2461ed30aae6ae191bf5260fd42342b5715706baab213c0d031c2f120aee7cdcc69a2a5d0a5274b62f299ff3
   languageName: node
   linkType: hard
 
-"unplugin@npm:^2.3.4":
-  version: 2.3.4
-  resolution: "unplugin@npm:2.3.4"
+"unplugin@npm:^2.3.5":
+  version: 2.3.5
+  resolution: "unplugin@npm:2.3.5"
   dependencies:
     acorn: "npm:^8.14.1"
     picomatch: "npm:^4.0.2"
     webpack-virtual-modules: "npm:^0.6.2"
-  checksum: 10/07a4bdec1adc4065f68c871be7611a2d67c28295a4524c8ec457d9894efdbcd7b9ce83fda9f3cf1d6ea6ef1dc3d06238a0a275bbd17a42ac64b5918941023dde
+  checksum: 10/93956b472c66ba452599d64343ef3c2440f8279bdc449f399f9c884307934f9b383fa09c646f998f0cf1488204e993316f9a2e483d6cf01f45fd618f401942dd
   languageName: node
   linkType: hard
 
@@ -11934,10 +11934,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.22.4, zod@npm:^3.25.43":
-  version: 3.25.43
-  resolution: "zod@npm:3.25.43"
-  checksum: 10/85deea9b9b65125cf4eda230b6a2b8c30fd594054bf1d773c53d9c08fe00c4eae6affc5e01cf6cbb431750d6ff7dfe345c49e3a4ed3a1dc265c9171ed4a065fb
+"zod@npm:^3.22.4, zod@npm:^3.25.46":
+  version: 3.25.46
+  resolution: "zod@npm:3.25.46"
+  checksum: 10/04ffe7d8806e4b3949886d176420610535b0acdafe2bd7e6d171e22e6e744c4d60388f74586454666bc758e0fc434e8ce1dfb8937b8f4394d71d651829aca3d4
   languageName: node
   linkType: hard
 
