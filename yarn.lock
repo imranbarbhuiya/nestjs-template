@@ -1387,13 +1387,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@darraghor/eslint-plugin-nestjs-typed@npm:^6.6.6":
-  version: 6.6.6
-  resolution: "@darraghor/eslint-plugin-nestjs-typed@npm:6.6.6"
+"@darraghor/eslint-plugin-nestjs-typed@npm:^6.6.7":
+  version: 6.6.7
+  resolution: "@darraghor/eslint-plugin-nestjs-typed@npm:6.6.7"
   dependencies:
-    "@typescript-eslint/scope-manager": "npm:^8.34.0"
-    "@typescript-eslint/type-utils": "npm:^8.34.0"
-    "@typescript-eslint/utils": "npm:^8.34.0"
+    "@typescript-eslint/scope-manager": "npm:^8.34.1"
+    "@typescript-eslint/type-utils": "npm:^8.34.1"
+    "@typescript-eslint/utils": "npm:^8.34.1"
     eslint-module-utils: "npm:2.12.0"
     glob: "npm:11.0.3"
     reflect-metadata: "npm:0.2.2"
@@ -1402,7 +1402,7 @@ __metadata:
     "@typescript-eslint/parser": ^7.0.0 || ^8.0.0
     class-validator: "*"
     eslint: ">=9.18.0"
-  checksum: 10/0ee9ef8e2240199cf9279e75afafe869ddec216e74432f0789ce1c4d4f3d7f49e8aecdd8d38a5c2afd124f3bb0820d5f6f5a2534b4e32f5a418557b112eeb9e0
+  checksum: 10/fc10f88a4197e177a905367742770e1af55e3db80c18625f3fe6c17b3a33b6f4378a3aec5991da18c15670f3efeda7fce27036ccb8f27809c9b20149b1fbdec7
   languageName: node
   linkType: hard
 
@@ -3438,7 +3438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:8.34.1, @typescript-eslint/scope-manager@npm:^8.1.0, @typescript-eslint/scope-manager@npm:^8.34.0":
+"@typescript-eslint/scope-manager@npm:8.34.1, @typescript-eslint/scope-manager@npm:^8.1.0, @typescript-eslint/scope-manager@npm:^8.34.1":
   version: 8.34.1
   resolution: "@typescript-eslint/scope-manager@npm:8.34.1"
   dependencies:
@@ -3472,7 +3472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:^8.34.0":
+"@typescript-eslint/type-utils@npm:^8.34.1":
   version: 8.34.1
   resolution: "@typescript-eslint/type-utils@npm:8.34.1"
   dependencies:
@@ -3597,7 +3597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.34.1, @typescript-eslint/utils@npm:^8.1.0, @typescript-eslint/utils@npm:^8.34.0":
+"@typescript-eslint/utils@npm:8.34.1, @typescript-eslint/utils@npm:^8.1.0, @typescript-eslint/utils@npm:^8.34.1":
   version: 8.34.1
   resolution: "@typescript-eslint/utils@npm:8.34.1"
   dependencies:
@@ -8855,7 +8855,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nestjs-template@workspace:."
   dependencies:
-    "@darraghor/eslint-plugin-nestjs-typed": "npm:^6.6.6"
+    "@darraghor/eslint-plugin-nestjs-typed": "npm:^6.6.7"
     "@imranbarbhuiya/duration": "npm:^5.1.8"
     "@nestjs/cli": "npm:^11.0.7"
     "@nestjs/common": "npm:^11.1.3"
